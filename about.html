@@ -12,8 +12,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -22,20 +21,17 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- =======================================================
-  * Template Name: Butterfly - v2.1.0
+  * Template Name: Butterfly
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
   * Template URL: https://bootstrapmade.com/butterfly-free-bootstrap-theme/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
@@ -46,44 +42,38 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"
-          style="max-height:55px"></a>
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       <!-- Uncomment below if you prefer to use text as a logo -->
-      <!-- <h1 class="logo mr-auto"><a href="index.html">Butterfly</a></h1> -->
+      <!-- <h1 class="logo"><a href="index.html">Butterfly</a></h1> -->
 
-      <nav class="nav-menu d-none d-lg-block">
+      <nav id="navbar" class="navbar">
         <ul>
-          <li id="home"><a href="index.html">Home</a></li>
-          <li id="about"><a href="about.html">About</a></li>
-          <li id="team"><a href="index.html#team">Team</a></li>
-          <li class="drop-down" id="outomes"><a href="">Outcomes</a>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Outcomes</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li id="datasets"><a href="datasets.html">Datasets</a></li>
-              <li id="publications"><a href="publications.html">Publications</a></li>
-              <li id="software"><a href="software.html">Software</a></li>
-              <li id="deliverables"><a href="deliverables.html">Deliverables</a></li>
+              <li><a class="nav-link scrollto" href="datasets.html">Datasets</a></li>
+              <li><a class="nav-link scrollto" href="publications.html">Publications</a></li>
+              <li><a class="nav-link scrollto" href="software.html">Software</a></li>
+              <li><a class="nav-link scrollto" href="deliverables.html">Deliverables</a></li>
             </ul>
           </li>
-          <li class="drop-down" id="resources"><a href="">Resources</a>
+          <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li id="resource_datasets"><a href="resources_datasets.html">Datasets</a></li>
-              <li id="resource_publications"><a href="resources_publications.html">Related Research</a></li>
+              <li><a class="nav-link scrollto" href="resources_datasets.html">Datasets</a></li>
+              <li><a class="nav-link scrollto" href="resources_publications.html">Publications</a></li>
             </ul>
           </li>
-          <!-- <li id="news"><a href="news.html">News</a></li> -->
-          <li id="contact"><a href="contact.html">Contact</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
-  <script>
-    $(document).ready(function () {
-      $("#about").addClass("active");
-    });
-  </script>
 
   <main id="main">
 
@@ -91,8 +81,9 @@
     <section class="about">
       <div class="container">
 
-        <div class="row" style="margin-top: 60px;">
-          <div class="col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch py-5 px-lg-5">
+        <div class="row">
+          <div
+            class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
             <h3>Themis: Modeling, Measuring and Mitigating Bias in Online Information
               Platforms</h3>
             <p>
@@ -111,13 +102,7 @@
               project will be structured along three axes aligned with the three goals
               above.
             </p>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch py-5 px-lg-5">
-            <h4 style="font-weight:bold;">Axes</h4>
-            <p>The project will be structured along three axes:</p>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-task"></i></div>
@@ -151,167 +136,220 @@
             </div>
           </div>
 
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch px-lg-5">
+              <h4>Project information:</h4>
+              <ul>
+                <li><b>Start date:</b> November 2023</li>
+                <li><b>End date:</b> November 2025</li>
+                <li><b>Project Number:</b> 016636</li>
+                <li><b>Principal Investigator:</b> <a href="http://www.cs.uoi.gr/~tsap/" target="_blank">Panayiotis
+                    Tsaparas</a></li>
+                <li><b>Sub-action</b>: Sub-action 2. Funding Projects in Leading-Edge Sectors – RRFQ: Basic Research
+                  Financing (Horizontal support for all Sciences)</li>
+                <li><b>Scientific Area:</b> ThA4. Mathematics & Information Sciences</li>
+                <li><b>Scientific Field:</b> 4.1 Artificial intelligence and robotics</li>
+                <li><b>Total Budget (€):</b> 170,000 </li>
+                <li><b>Host Institution:</b> <a href="https://www.uoi.gr/en/" target="_blank"> University of Ioannina
+                  </a>
+                </li>
+                <li><b>Cooperative Organizations:</b>
+                  <ul>
+                    <li><a href="https://www.forth.gr/en/home/" target="_blank"> Foundation
+                        For
+                        Research and Technology - Hellas, Greece</a> </li>
+                    <li><a href="https://www.kth.se/en" target="_blank">KTH Royal Institute of Technology, Sweden</a>
+                    </li>
+                    <li><a href="https://www.upf.edu/en/" target="_blank">Universitat Pompeu Fabra, Spain</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><b>Funded under:</b> 2nd Call for H.F.R.I.’s Research Projects to Support Faculty Members &
+                  Researchers</li>
+              </ul>
+
+            </div>
+          </div>
+
         </div>
+    </section>
 
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch px-lg-5">
-            <h4>Project information:</h4>
-            <ul>
-              <li><b>Start date:</b> November 2023</li>
-              <li><b>End date:</b> November 2025</li>
-              <li><b>Project Number:</b> 016636</li>
-              <li><b>Principal Investigator:</b> <a href="http://www.cs.uoi.gr/~tsap/" target="_blank">Panayiotis
-                  Tsaparas</a></li>
-              <li><b>Sub-action</b>: Sub-action 2. Funding Projects in Leading-Edge Sectors – RRFQ: Basic Research
-                Financing (Horizontal support for all Sciences)</li>
-              <li><b>Scientific Area:</b> ThA4. Mathematics & Information Sciences</li>
-              <li><b>Scientific Field:</b> 4.1 Artificial intelligence and robotics</li>
-              <li><b>Total Budget (€):</b> 170,000 </li>
-              <li><b>Host Institution:</b> <a href="https://www.uoi.gr/en/" target="_blank"> University of Ioannina </a>
-              </li>
-              <li><b>Cooperative Organizations:</b>
-                <ul>
-                  <li><a href="https://www.forth.gr/en/home/" target="_blank"> Foundation
-                      For
-                      Research and Technology - Hellas, Greece</a> </li>
-                  <li><a href="https://www.kth.se/en" target="_blank">KTH Royal Institute of Technology, Sweden</a></li>
-                  <li><a href="https://www.upf.edu/en/" target="_blank">Universitat Pompeu Fabra, Spain</a>
-                  </li>
-                </ul>
-              </li>
-              <li><b>Funded under:</b> 2nd Call for H.F.R.I.’s Research Projects to Support Faculty Members &
-                Researchers</li>
-            </ul>
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
 
-          </div>
-        </div>
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
 
-        <div class="row">
-          <div><a href="software.html" class="btn-get-started scrollto"
-              style="font-family: 'Dosis', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: 1px; display: inline-block; padding: 8px 28px; border-radius: 3px; transition: 0.5s; margin-top: 25px; color: #fff; background: #49b5e7; text-transform: uppercase;">Software</a>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <a href="https://www.uoi.gr/en/" title="University of Ioannina" target="_blank">
+                <img src="assets/img/collabs/uoi.jpg" class="img-fluid" alt="UOI" style="height: 120px; padding: 15px;">
+              </a>
+            </div>
           </div>
 
-          <div><a href="publications.html" class="btn-get-started scrollto"
-              style="font-family: 'Dosis', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: 1px; display: inline-block; padding: 8px 28px; border-radius: 3px; transition: 0.5s; margin-top: 25px; color: #fff; background: #49b5e7; text-transform: uppercase; margin-left: 10px;">Publications</a>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <a href="https://www.forth.gr/en/home/" title="Foundation For Research and Technology - Hellas"
+                target="_blank">
+                <img src="assets/img/collabs/forth.jpg" class="img-fluid" alt="FORTH"
+                  style="height: 40px; padding: 0px;">
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 icon-boxes flex-column text-center align-items-stretch py-5 px-lg-5">
-
-            <a href="https://www.uoi.gr/en/" title="University of Ioannina" target="_blank"><img
-                src="assets/img/collabs/uoi.jpg" class="img-fluid" alt="UOI" style="height: 85px; padding: 15px;" /></a>
-
-            <a href="https://www.forth.gr/en/home/" title="Foundation For Research and Technology - Hellas"
-              target="_blank"><img src="assets/img/collabs/forth.jpg" class="img-fluid" alt="FORTH"
-                style="height: 85px; padding: 15px;" /></a>
-
-            <a href="https://www.kth.se/en" title="KTH Royal Institute of Technology" target="_blank"><img
-                src="assets/img/collabs/kth.svg" class="img-fluid" alt="KTH" style="height: 85px; padding: 15px;" /></a>
-
-            <a href="https://www.upf.edu/en/" title="Universitat Pompeu Fabra" target="_blank"><img
-                src="assets/img/collabs/upf.webp" class="img-fluid" alt="UPF"
-                style="height: 85px; padding: 15px;" /></a>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <a href="https://www.kth.se/en" title="KTH Royal Institute of Technology" target="_blank">
+                <img src="assets/img/collabs/kth.svg" class="img-fluid" alt="KTH" style="height: 100px; padding: 15px;">
+              </a>
+            </div>
           </div>
-          <div class="col-xl-8 col-lg-8 icon-boxes flex-column text-center py-5 px-lg-5">
-            <p style="text-align:center;"> <i><b style="vertical-align:bottom;">
-                  The research project is implemented in the framework of H.F.R.I call “Basic research Financing
-                  (Horizontal support of all Sciences)” under the National Recovery and Resilience Plan “Greece 2.0”
-                  Funded by the European Union - NextGenerationEU (H.F.R.I. Project Number: 016636)</b></i> </p>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <a href="https://www.upf.edu/en/" title="Universitat Pompeu Fabra" target="_blank">
+                <img src="assets/img/collabs//upf.webp" class="img-fluid" alt="UPF"
+                  style="height: 85px; padding: 15px;">
+              </a>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-4 icon-boxes flex-column text-center  py-5 px-lg-5">
-            <a href="
-                          https://www.elidek.gr/en/homepage/" title="Hellenic Foundation for Research & Innovation"
-              target="_blank"><img src="assets/img/collabs/elidek_logo_en.png" class="img-fluid" alt="HFRI"
-                style="height: 85px;" /></a>
-          </div>
+
         </div>
       </div>
-    </section>
+
+      <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+        <div class="col-lg-9 col-md-9 col-9 icon-boxes flex-column text-center py-5 px-lg-5">
+          <p style="text-align:center;"> <i><b style="vertical-align:bottom;">
+                The research project is implemented in the framework of H.F.R.I call “Basic research Financing
+                (Horizontal support of all Sciences)” under the National Recovery and Resilience Plan “Greece 2.0”
+                Funded by the European Union - NextGenerationEU (H.F.R.I. Project Number: 016636)</b></i> </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-3  icon-boxes flex-column text-center  py-5 px-lg-5">
+          <a href="https://www.elidek.gr/en/homepage/" title="Hellenic Foundation for Research & Innovation"
+            target="_blank"><img src="assets/img/collabs/elidek_logo_en.png" class="img-fluid" alt="HFRI"
+              style="height: 60px;" /></a>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
   </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top" style="background: #ebf7fc">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-lg-5 col-md-4 footer-contact">
-            <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"
-                style="max-height:55px"></a>
-            <p> Themis: Modeling, Measuring and Mitigating Bias in Online Information Platforms<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>Useful Links</h3>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="news.html">Latest News</a></li> -->
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h3>Our Social Networks</h3>
-            <div class="social-links mt-3">
-              <a href="#" class="linkedin"><i class="fab fa-github"></i></a>
+    <!----
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4>Join Our Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
             </div>
           </div>
         </div>
+      </div>-->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Themis</h3>
+            <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"
+                style="max-height:55px"></a>
+            <p>Modeling, Measuring and Mitigating Bias in Online Information Platforms<br>
+            </p>
+          </div>
+
+          <!--
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>-->
+
+          <!--
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>-->
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Check-out our code repository</p>
+            <div class="social-links mt-3">
+              <a href="#" class="linkedin"><i class="bi bi-github"></i></a>
+              <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
 
-    <hr>
-
-    <div class="container pb-4">
-      <div class="copyright">
-
-        <!-- &copy; Copyright <strong><span>Butterfly</span></strong>. All Rights Reserved -->
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span><a href="http://www.linkedin.com/in/panagiotispapadakos"
+                target="_blank">Panagiotis Papadakos</a></span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/butterfly-free-bootstrap-theme/ -->
+          Website designed using <a href="https://bootstrapmade.com/">BootstrapMade</a>.
+          <br>
+          Logo designed using icon from <a href="https://www.freepik.com/icon/scale_10184680"
+            target="_blank">Freepiks</a>
+          and wordcloud from <a href="https://www.wordclouds.com/ ">WordClouds.com</a>
+        </div>
       </div>
-      <div class="credits" style="text-align: right;">
-        Website designed by <a href="http://www.linkedin.com/in/panagiotispapadakos" target="_blank">Panagiotis
-          Papadakos</a> using <a href="https://bootstrapmade.com/">BootstrapMade template</a>
-        <br>
-        Logo designed by <a href="https://users.ics.forth.gr/~papadako/" target="_blank"> Panagiotis Papadakos</a>. Icon
-        from <a href="https://www.freepik.com/icon/scale_10184680" target="_blank">Freepiks</a> and wordcloud from <a
-          href="https://www.wordclouds.com/ ">WordClouds.com</a>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
+  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <script>
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $('.back-to-top').fadeIn('slow');
-      } else {
-        $('.back-to-top').fadeOut('slow');
-      }
-    });
-
-    $('.back-to-top').click(function () {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 1500, 'easeInOutExpo');
-      return false;
-    });
-  </script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
