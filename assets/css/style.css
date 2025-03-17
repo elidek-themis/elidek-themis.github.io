@@ -334,13 +334,13 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 50vh;
   background: #f9f9f9;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 
 #hero .container {
-  padding-top: 84px;
+  /*padding-top: 84px;*/
 }
 
 #hero h1 {
